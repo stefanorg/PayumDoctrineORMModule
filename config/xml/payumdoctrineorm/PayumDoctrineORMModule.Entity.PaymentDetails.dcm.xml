@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd"
+>
+    <entity name="PayumDoctrineORMModule\Entity\PaymentDetails" table="payum_payment_details">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO" />
+        </id>
+        <field name="orderId" column="order_id" type="integer" nullable="false"/>
+        <field name="noshipping" column="noshipping" type="integer" nullable="true" />
+        <field name="paymentrequest_nnn_itemamt" column="paymentrequest_itemamounts" type="array" nullable="true" />
+        <field name="paymentrequest_nnn_shippingamt" column="paymentrequest_shippingamounts" type="array" nullable="true" />
+        <field name="paymentrequest_nnn_invnum" column="paymentrequest_invnums" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptoname" column="paymentrequest_shiptonames" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptostreet" column="paymentrequest_shitostreets" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptocity" column="paymentrequest_shiptocities" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptostate" column="paymentrequest_shiptostates" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptozip" column="paymentrequest_shiptozips" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptocountrycode" column="paymentrequest_shiptocountrycodes" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_shiptophonenum" column="paymentrequest_shiptophonenums" type="array" nullable="true" />
+
+        <field name="paymentrequest_nnn_taxamt" column="paymentrequest_taxamts" type="array" nullable="true" />
+
+        <field name="l_paymentrequest_nnn_amtmmm" column="l_paymentrequest_amts" type="array" nullable="true" />
+        <field name="l_paymentrequest_nnn_namemmm" column="l_paymentrequest_names" type="array" nullable="true" />
+        <field name="l_paymentrequest_nnn_qtymmm" column="l_paymentrequest_qtys" type="array" nullable="true" />
+        <field name="useraction" column="useraction" type="string" nullable="true" />
+    </entity>
+</doctrine-mapping>

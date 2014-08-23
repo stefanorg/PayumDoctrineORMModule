@@ -1,0 +1,32 @@
+{
+    "name": "stefanorg/payumdoctrinemodule",
+    "description": "Doctrine 2 module for Payum library",
+    "type": "library",
+    "keywords": [
+        "payum",
+        "module",
+        "library",
+        "zf2"
+    ],
+    "homepage": "https://github.com/stefanorg",
+    "authors": [
+        {
+            "name": "Stefano Corallo",
+            "email": "stefanorg@gmail.com",
+            "homepage": "http://stefanorg.github.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "payum/payum-module": "0.6.x-dev",
+        "payum/paypal-express-checkout-nvp": "0.6.x-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "PayumDoctrineORMModule": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
