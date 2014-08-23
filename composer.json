@@ -1,5 +1,5 @@
 {
-    "name": "stefanorg/payumdoctrinemodule",
+    "name": "stefanorg/payum-doctrine-orm-module",
     "description": "Doctrine 2 module for Payum library",
     "type": "library",
     "keywords": [
