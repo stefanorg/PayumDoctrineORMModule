@@ -18,8 +18,7 @@
     ],
     "require": {
         "php": ">=5.3",
-        "payum/payum-module": "0.6.x-dev",
-        "payum/paypal-express-checkout-nvp": "0.6.x-dev"
+        "payum/payum-module": "dev-master"
     },
     "autoload": {
         "psr-0": {
